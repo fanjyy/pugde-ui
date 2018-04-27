@@ -1,0 +1,50 @@
+//颜色预设值
+color-primary = #20a0ff;
+color-success = #13ce66;
+color-warning = #f7ba2a;
+color-error = #ff4949;
+color-info = #50BFFF;
+color-light = rgba(color-primary, 0.4)
+//常用于 active 背景
+color-ignore = #C0CCDA
+color-gray = #eee
+
+
+//过渡动画预设贝塞尔曲线
+bezier-default = cubic-bezier(0.075, 0.82, 0.165, 1);
+
+cls(clsName)
+  PG__ + clsName
+//CSS 属性重定义
+transition(property,duration = 0.8s,function = bezier-default)
+  transition arguments
+  -webkit-transition arguments
+  
+transform()
+  transform arguments
+  -webkit-transform arguments
+text-overflow(width)
+  width width
+  overflow hidden
+  text-overflow ellipsis
+  white-space nowrap
+
+-pos(type, args)
+  i = 0
+  position: unquote(type)
+  if args == 'center'
+    top 50%
+    left 50%
+    transform translate(-50%, -50%)
+  else
+    {args[i]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+    {args[i += 1]}: args[i + 1] is a 'unit' ? args[i += 1] : 0
+
+absolute()
+  -pos('absolute', arguments)
+
+fixed()
+  -pos('fixed', arguments)
+  
+relative()
+  -pos('relative', arguments)
