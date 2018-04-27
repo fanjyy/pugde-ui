@@ -1,6 +1,6 @@
 # pugde-ui
 
-> A simple VUE component library
+> vue2 + webpack3 轻便的移动端UI框架
 
 ## 安装
 ```shell
