@@ -14,14 +14,12 @@
 </div>
 </template>
 <script>
-import PInput from 'components/Input'
 import PSwitch from 'components/Switch'
 import CodeBlock from './common/CodeBlock'
 import ApiBlock from './common/ApiBlock'
 
 export default {
     components: {
-        PInput,
         PSwitch,
         CodeBlock,
         ApiBlock

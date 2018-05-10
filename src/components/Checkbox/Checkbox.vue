@@ -1,7 +1,8 @@
 <template>
     <div class="_checkbox-group" ref="panel">
         <Vinput 
-            v-for="slot in $slots.checkbox" 
+            v-for="(slot,key) in $slots.checkbox" 
+            :key="key"
             v-model="slot.data.attrs.value" 
             :disabled="slot.data.attrs.disabled" 
             type="checkbox" 

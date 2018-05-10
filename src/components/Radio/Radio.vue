@@ -1,7 +1,8 @@
 <template>
     <div class="_radio-group" ref="panel">
         <Vinput 
-            v-for="slot in $slots.radio" 
+            v-for="(slot,key) in $slots.radio" 
+            :key="key"
             v-model="slot.data.attrs.value" 
             :disabled="slot.data.attrs.disabled" 
             type="radio" 

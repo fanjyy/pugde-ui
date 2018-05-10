@@ -7,7 +7,7 @@
 npm install
 ```
 
-## 运行案例
+## 运行 Example
 ```shell
 npm run dev
 ```

@@ -116,7 +116,6 @@ import Radio from 'components/Radio'
 import CodeBlock from './common/CodeBlock'
 import ApiBlock from './common/ApiBlock'
 
-
 export default {
     data(){
         return {

@@ -14,7 +14,7 @@ import {cls,size} from '../../utils';
 const prefixCls = cls('switch');
 let switchIndex = 0;
 export default {
-    name:'Switch',
+    name:'PSwitch',
     model:{
         prop:'value',
         event:'change'
