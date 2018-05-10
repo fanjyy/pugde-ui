@@ -7,10 +7,10 @@
     </div>
 </template>
 <script>
-require('../../assets/js/highlight.pack.js')
+require('../../assets/js/highlight.pack.js');
 
 export default{
-	name:'Highlight',
+	name:"Highlight",
 	props:{
 	},
 	data(){

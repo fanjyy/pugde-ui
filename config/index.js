@@ -38,5 +38,16 @@ module.exports = {
     // In our experience, they generally work as expected,
     // just be aware of this issue when enabling this option.
     cssSourceMap: false
+  },
+  exampleBuild: {
+    index: path.resolve(__dirname, '../example/dist/index.html'),
+    env: require('./prod.env'),
+    entry: {
+      app: './example/main.js'
+    },
+    assetsRoot: path.resolve(__dirname, '../example/dist'),
+    assetsSubDirectory: '',
+    assetsPublicPath:'',
+    productionSourceMap:false
   }
 }

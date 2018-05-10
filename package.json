@@ -5,6 +5,7 @@
   "author": "Fan",
   "private": true,
   "scripts": {
+    "build-example": "node build/example/build.js",
     "dev": "node build/dev-server.js",
     "start": "npm run dev",
     "build": "node build/build.js"

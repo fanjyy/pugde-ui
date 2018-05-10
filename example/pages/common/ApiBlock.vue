@@ -2,7 +2,7 @@
 	<div class="_api-block">
 		<div class="props">
 			<p class="liter-title">{{to}} Props</p>
-			<div class="table" v-for="props in data.props">
+			<div class="table" v-for="(props,key) in data.props" :key="key">
 				<div class="intro-menu">
 					<div class="intro-menu-item intro-menu-name">
 						<p class="val name">{{props.name}}</p>
@@ -23,7 +23,7 @@
 		</div>
 		<div class="events" v-if="data.events">
 			<p class="liter-title">{{to}} Events</p>
-			<div class="table" v-for="events in data.events">
+			<div class="table" v-for="(events,key) in data.events" :key="key">
 				<div class="intro-menu">
 					<div class="intro-menu-item intro-menu-name">
 						<p class="val name">@{{events.name}}</p>
@@ -40,7 +40,7 @@
 		</div>
 		<div class="slot" v-if="data.slot">
 			<p class="liter-title">{{to}} Slot</p>
-			<div class="table" v-for="slot in data.slot">
+			<div class="table" v-for="(slot,key) in data.slot" :key="key">
 				<div class="intro-menu">
 					<div class="intro-menu-item intro-menu-name">
 						<p class="val name">{{slot.name}}</p>
