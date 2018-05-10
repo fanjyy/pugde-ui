@@ -40,12 +40,12 @@ module.exports = {
     cssSourceMap: false
   },
   exampleBuild: {
-    index: path.resolve(__dirname, '../example/dist/index.html'),
+    index: path.resolve(__dirname, '../example/demo/index.html'),
     env: require('./prod.env'),
     entry: {
       app: './example/main.js'
     },
-    assetsRoot: path.resolve(__dirname, '../example/dist'),
+    assetsRoot: path.resolve(__dirname, '../example/demo'),
     assetsSubDirectory: '',
     assetsPublicPath:'',
     productionSourceMap:false
