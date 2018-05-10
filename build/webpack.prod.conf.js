@@ -13,7 +13,7 @@ const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const env = config.build.env
 
 const webpackConfig = merge(baseWebpackConfig, {
-  entry: './src/components.js',
+  entry: './src/index.js',
   module: {
     rules: utils.styleLoaders({
       sourceMap: config.build.productionSourceMap,
